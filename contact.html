@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+
+    <title>Contacts</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/elegant-font/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="styles/bootstrap.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+
+
+  <section class="above-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 align-self-center">
+          <ul class="social-icons">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-behance"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 align-self-center">
+          <div class="logo">
+            <a href="index.html">    face</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Header -->
+  <header class="site-header fixed-header">
+    <div class="container expanded">
+      <div class="header-wrap">
+        <div class="header-logo">
+          <a href="index.html">
+            face
+          </a>
+        </div>
+        <div class="header-nav">
+          <ul class="main-menu">
+
+            <li><a href="index.html">Main</a></li>
+            <li><a href="blog.html">Articles</a></li>
+            <li><a href="terms.html">Terms and conditions</a></li>
+            <li><a href="policy.html">Privacy policy</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+          </ul>
+        </div>
+        <div class="header-widgets">
+          <ul class="right-menu">
+            <li class="menu-item menu-mobile-nav">
+              <a href="#" class="menu-bar" id="menu-show-mobile-nav">
+                <span class="hamburger"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+    <!-- /Header -->
+
+    <!-- change class -->
+    <div class="change-class"></div>
+
+
+
+    <section class="large-gap contact-me contact-version-one">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="widget-sidebar contact-me">
+              <div class="widget-header">
+                <h4>Contacts</h4>
+              </div>
+              <div class="widget-content">
+                <div class="contact-form">
+                  <form id="contact" action="thanks.html" method="post">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <fieldset>
+                          <input name="name" type="text" class="form-control" id="name" placeholder="Name" required="">
+                        </fieldset>
+                      </div>
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <fieldset>
+                          <input name="email" type="text" class="form-control" id="email"  placeholder="Email" >
+                        </fieldset>
+                      </div>
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <fieldset>
+                          <input name="subject" type="text" class="form-control" id="subject" placeholder="Phone number" >
+                        </fieldset>
+                      </div>
+                      <div class="col-lg-12">
+                        <fieldset>
+                          <textarea name="message" rows="6" class="form-control" id="message"  required=""></textarea>
+                        </fieldset>
+                      </div>
+                      <div class="col-lg-12">
+                        <fieldset>
+
+                          <input style="width: 30px!important;" type="checkbox" name="terms" value="check" required=""/>
+                          <a href="policy.html" target="_blank">
+                            I have read and agree to the terms of the user agreement
+                          </a>
+
+                        </fieldset>
+                      </div>
+                      <div class="col-lg-12">
+                        <fieldset>
+
+                          <button type="submit" id="form-submit" class="filled-button">Send</button>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  <footer>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-12">
+          <div class="copyright-text">
+            <p>
+              Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+              All rights reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class='cookie-banner'>
+    <p>
+      The site uses cookies. They allow us to recognize you and get information about your user experience.By continuing to browse the site, I agree to the use of cookies by the site owner in accordance with  <a target="_blank" href="https://en.wikipedia.org/wiki/HTTP_cookie">Cookie policy</a>
+    </p>
+    <button class='close-cookie'>&times;</button>
+  </div>
+    <a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
+
+    <!-- Scripts -->
+    <script src="scripts/vendors/jquery-3.4.1.min.js"></script>
+
+  <script>
+    window.onload = function () {
+      $('.close-cookie').click(function () {
+        $('.cookie-banner').fadeOut();
+      })
+    }
+  </script>
+  <script>
+    let elems = document.querySelectorAll('.server-name');
+    elems.forEach((elem) => {
+      elem.innerHTML = window.location.hostname
+    })
+  </script>
+    <script src="scripts/vendors/owl-carousel.min.js"></script>
+
+
+
+  </body>
+</html>
